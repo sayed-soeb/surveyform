@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.survey-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+}
+
+.survey-form {
+  background-color: rgba(176, 235, 224, 0.397);
+  box-shadow: 0 0 10px rgba(202, 244, 244, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  border: 2px solid #d2f5f4;
+}
+
+h2 {
+  color: #101a30;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #0c1020;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #9eddee;
+  color: #171c2e;
+}
+
+button {
+  background-color: #181839;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #181d3b;
+  transform: scale(1.05);
+}
+
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid white;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #1e87d0;
+}
