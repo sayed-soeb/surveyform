@@ -11,7 +11,7 @@ const SurveyDetail = () => {
   useEffect(() => {
     const fetchSurveyDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/api/surveys/${id}`);
+        const response = await fetch(`https://survey-form-dyif.onrender.com/api/surveys/${id}`);
         if (response.ok) {
           const surveyData = await response.json();
           setSurvey(surveyData);

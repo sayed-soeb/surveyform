@@ -24,7 +24,7 @@ const Survey = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/surveys', {
+      const response = await fetch('https://survey-form-dyif.onrender.com/api/surveys', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

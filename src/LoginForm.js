@@ -12,7 +12,7 @@ const LoginForm = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
+      const response = await fetch('https://survey-form-dyif.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,10 +36,9 @@ const LoginForm = () => {
 
   return (
     <div className='login-container'>
-      <Link to="/" className="home-button">Home</Link>
       <div className='login-form'>
         <div>
-          <h1>Admin Login</h1>
+          <h1>Login</h1>
         </div>
         <div className='input'>
           <label>Email:</label>

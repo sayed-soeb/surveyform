@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 .survey-container {
   display: flex;
@@ -21,7 +21,6 @@
 
 h2 {
   color: #101a30;
-  font-family: 'Pacifico', cursive;
   margin-bottom: 20px;
 }
 

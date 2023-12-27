@@ -11,7 +11,7 @@ const SignupForm = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/signup', {
+      const response = await fetch('https://survey-form-dyif.onrender.com/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,6 @@ const SignupForm = () => {
   return (
     <>
       <div className='signup'>
-      <Link to="/" className="home-button">Home</Link>
         <div className='signup-form'>
           <h1>Admin Signup</h1>
           <div>

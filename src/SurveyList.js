@@ -12,7 +12,7 @@ const SurveyList = () => {
 
   const fetchSurveys = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/surveys');
+      const response = await fetch('https://survey-form-dyif.onrender.com/api/surveys');
       const data = await response.json();
       setSurveys(data);
     } catch (error) {
@@ -31,7 +31,7 @@ const SurveyList = () => {
 
   const handleDeleteSurvey = async (surveyId) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/surveys/${surveyId}`, {
+      const response = await fetch(`https://survey-form-dyif.onrender.com/api/surveys/${surveyId}`, {
         method: 'DELETE',
       });
 
@@ -49,8 +49,11 @@ const SurveyList = () => {
   };
 
   return (
+    <>
+    <h2>Surveys</h2>
+    
     <div className='survey-list-container'>
-      <h2>Survey List</h2>
+      
       <button className='logout-button' onClick={handleLogout}>Logout</button>
       <ul className='survey-list'>
         {surveys.map((survey) => (
@@ -65,6 +68,7 @@ const SurveyList = () => {
         ))}
       </ul>
     </div>
+    </>
   );
 };
 
