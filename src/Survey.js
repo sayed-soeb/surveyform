@@ -54,8 +54,7 @@ const Survey = () => {
 
   return (
     <div className='survey-container'>
-      <Link to="/" className="home-button">Home</Link>
-      <h2>Take a Survey</h2>
+      <h2>Fill the form</h2>
       <form className='survey-form'>
         <label>
           Name:
